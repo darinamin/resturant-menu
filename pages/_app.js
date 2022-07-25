@@ -16,7 +16,7 @@ import { useStore } from "../redux/index";
 import GlobalStyles from "@/styles/global";
 // context
 import AuthContextProvider from "context/auth-context/auth-context";
-
+import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 const layouts = {
   main: DefaultLayout,
   none: (props) => <>{props.children}</>,

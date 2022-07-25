@@ -1,7 +1,8 @@
+import Footer from "./footer";
 export default function DefaultLayout({ children }) {
   return (
     <div>
-      <h2>DefaultLayout</h2>
+      <Footer />
       <div>{children}</div>
     </div>
   );
