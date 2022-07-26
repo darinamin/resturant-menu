@@ -36,13 +36,14 @@ export default function Footer() {
           src={"/logo_2.png"}
           alt="Image 1"
         />
-        <InputStyled
+        {/* <Search
           placeholder="input search text"
+          noStyle
           style={{
             width: 460,
             border: "none",
           }}
-        />
+        /> */}
         <ImageStyled>
           <Image
             layout="fixed"
