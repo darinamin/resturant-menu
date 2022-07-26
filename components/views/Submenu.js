@@ -23,11 +23,6 @@ function Submenu() {
         <div className={style.meal}>Pizza</div>
         <div className={style.meal}>4</div>
         <div className={style.meal}>5</div>
-        <div className={style.meal}>6</div>
-        <div className={style.meal}>7</div>
-        <div className={style.meal}>8</div>
-        <div className={style.meal}>9</div>
-        <div className={style.meal}>10</div>
       </div>
     </div>
   );
