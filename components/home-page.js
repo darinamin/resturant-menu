@@ -7,7 +7,7 @@ import { FaHamburger, FaBirthdayCake } from "react-icons/fa";
 import { BiDrink } from "react-icons/bi";
 import { GiFrenchFries } from "react-icons/gi";
 import FlexDiv from "./utils/flex-div";
-
+import Link from "next/link";
 const HomeStyles = styled.div`
   margin: 20px;
 `;
@@ -18,7 +18,7 @@ const StyledMainCardRight = styled(FlexDiv)`
   gap: 10px;
   width: 250px;
   height: 300px;
-  background-color: #eceae9;
+  background-color: #ffe6e6;
   margin: 10px;
   border-radius: 10px;
 `;
@@ -29,7 +29,7 @@ const StyledMainCardLeft = styled(FlexDiv)`
   gap: 10px;
   width: 250px;
   height: 180px;
-  background-color: #eceae9;
+  background-color: #f5f0bb;
   margin: 10px;
   border-radius: 10px;
 `;
@@ -43,36 +43,53 @@ export default function HomePage() {
     <HomeStyles>
       <Container>
         <FlexDiv justifyContent="center" alignItems="center" gap={20}>
+          <Link href={"/sub-menu"}>
+            <FlexDiv
+              justifyContent="center"
+              alignItems="center"
+              direction="column"
+            >
+              <StyledMainCardLeft>
+                <StyledCard>
+                  <Image
+                    src={"/burger.png"}
+                    height="120px"
+                    layout="fixed"
+                    width={160}
+                  />
+                </StyledCard>
+                <Text bold="bold" size={20}>
+                  Food
+                </Text>
+              </StyledMainCardLeft>
+              <StyledMainCardRight>
+                <StyledCard>
+                  <Image
+                    src={"/Potatos.png"}
+                    height="200px"
+                    layout="fixed"
+                    width={160}
+                  />
+                </StyledCard>
+                <Text bold="bold" size={20}>
+                  Food
+                </Text>
+              </StyledMainCardRight>
+            </FlexDiv>
+          </Link>
           <FlexDiv
             justifyContent="center"
             alignItems="center"
             direction="column"
           >
-            <StyledMainCardLeft>
-              <StyledCard>
-                <FaHamburger style={{ fontSize: "28px" }} />
-              </StyledCard>
-              <Text bold="bold" size={20}>
-                Food
-              </Text>
-            </StyledMainCardLeft>
             <StyledMainCardRight>
               <StyledCard>
-                <FaHamburger style={{ fontSize: "28px" }} />
-              </StyledCard>
-              <Text bold="bold" size={20}>
-                Food
-              </Text>
-            </StyledMainCardRight>
-          </FlexDiv>
-          <FlexDiv
-            justifyContent="center"
-            alignItems="center"
-            direction="column"
-          >
-            <StyledMainCardRight>
-              <StyledCard>
-                <FaHamburger style={{ fontSize: "28px" }} />
+                <Image
+                  src={"/Potatos.png"}
+                  height="200px"
+                  layout="fixed"
+                  width={160}
+                />
               </StyledCard>
               <Text bold="bold" size={20}>
                 Food
@@ -80,7 +97,12 @@ export default function HomePage() {
             </StyledMainCardRight>
             <StyledMainCardLeft>
               <StyledCard>
-                <FaHamburger style={{ fontSize: "28px" }} />
+                <Image
+                  src={"/burger.png"}
+                  height="120px"
+                  layout="fixed"
+                  width={160}
+                />
               </StyledCard>
               <Text bold="bold" size={20}>
                 Food

@@ -1,10 +1,16 @@
-import style from "styles/submenu.module.css";
+import style from "@/styles/submenu.module.css";
+import Image from "next/image";
 function Submenu() {
   return (
     <div className={style.container}>
       <div>
         <div>
-          <img src="burger.png" width={500} />
+          <Image
+            src={"/burger.png"}
+            width={400}
+            height="400px"
+            layout="fixed"
+          />
           <div className={style.details}>
             <h2>Cheeseburger</h2>
             <p>weight - 350 g</p>
@@ -15,10 +21,15 @@ function Submenu() {
       </div>
       <div className={style.mealContainer}>
         <div className={style.meal}>
-          <img src="burger.png" width={80} />
+          <Image src={"/burger.png"} height="100px" layout="fixed" width={80} />
         </div>
         <div className={style.meal}>
-          <img src="Potatos.png" width={80} />
+          <Image
+            src={"/Potatos.png"}
+            height="100px"
+            layout="fixed"
+            width={80}
+          />
         </div>
         <div className={style.meal}>Pizza</div>
         <div className={style.meal}>4</div>
