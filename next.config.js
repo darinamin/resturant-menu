@@ -36,7 +36,7 @@ module.exports = withPlugins(
       styledComponents: true,
     },
     images: {
-      domains: ["dashosmanbaba.com"],
+      domains: ["menu.click68.com"],
     },
 
     webpack(config) {

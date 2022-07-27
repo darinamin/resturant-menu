@@ -43,7 +43,7 @@ export default function HomePage() {
     <HomeStyles>
       <Container>
         <FlexDiv justifyContent="center" alignItems="center" gap={20}>
-          <Link href={"/sub-menu"}>
+          <Link href={"/dashboard"}>
             <FlexDiv
               justifyContent="center"
               alignItems="center"
